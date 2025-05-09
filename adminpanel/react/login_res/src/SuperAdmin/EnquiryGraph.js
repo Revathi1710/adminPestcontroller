@@ -13,7 +13,7 @@ const EnquiryGraph = () => {
     });
 
     useEffect(() => {
-        axios.get("http://localhost:5000/enquiryStats")
+        axios.get(`${process.env.REACT_APP_API_URL}/enquiryClickStats`)
             .then(response => {
                 const months = response.data.map(item => item.month);
                 const counts = response.data.map(item => item.totalEnquiries);
@@ -22,7 +22,7 @@ const EnquiryGraph = () => {
                     labels: months,
                     datasets: [
                         {
-                            label: "Total Enquiries",
+                            label: "Total Clicked",
                             data: counts,
                             borderColor: "orange",
                             backgroundColor: "rgba(0, 123, 255, 0.3)",
@@ -37,7 +37,7 @@ const EnquiryGraph = () => {
 
     return (
         <div style={{ width: "100%", height: "350px", margin: "auto" }}>
-            <h3 style={{ textAlign: "center" }}>Monthly Enquiry Overview</h3>
+            <h3 style={{ textAlign: "center" }}>Monthly Clicked Overview</h3>
             <Line 
                 data={chartData} 
                 options={{ 

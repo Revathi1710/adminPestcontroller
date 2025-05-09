@@ -71,6 +71,7 @@ import UpdateBuyer from './SuperAdmin/UpdateBuyer';
 import OnboardedVendors from './SuperAdmin/OnboardedVendors';
 import AddVendor from './SuperAdmin/AddVendor';
 import EditVendor from './SuperAdmin/EditVendor';
+import ViewEnquiry from './SuperAdmin/ViewEnquiry';
 
 import SearchResult from './SuperAdmin/SearchResult';
 import ExpiredVendors from './SuperAdmin/ExpiredVendors';
@@ -148,6 +149,7 @@ function App() {
           <Route path="/AllVendor" element={< AllVendor/>} />
           <Route path="/AddVendor" element={< AddVendor/>} />
           <Route path="/EditVendor/:vendorId" element={< EditVendor/>} />
+          <Route path='/ViewEnquiry/:id' element={<ViewEnquiry />} />
              <Route path="/SuperAdmin/AddMainService" element={< AddMainService/>} />
              <Route path="/SuperAdmin/AllService" element={< AllMainService/>} />
              <Route path="/SuperAdmin/AddProductAdmin" element={< AddProductAdmin/>} />
@@ -161,7 +163,7 @@ function App() {
           <Route path="/ViewVendor/:vendorId" element={< ViewVendor/>} />
           
           <Route path="/SuperAdmin/VendorBusiness/:id" element={< VendorBusiness/>} />
-          <Route path="/SuperAdmin/AdminDashboard" element={< AdminDashboard />} />
+          <Route path="/Dashboard" element={< AdminDashboard />} />
 
           <Route path="/SuperAdmin/UpdateCategory/:id" element={< UpdateCategorySuperAdmin/>} />
           <Route path="/SuperAdmin/AllProduct" element={< AllProductSuperAdmin />} />

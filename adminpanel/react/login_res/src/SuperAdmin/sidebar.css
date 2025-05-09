@@ -27,6 +27,12 @@ body {
   text-align: center;
 }
 
+.headerlist.active {
+  background-color: #19191a;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
 .headerallList {
   margin-bottom: -10px;
   display: flex;

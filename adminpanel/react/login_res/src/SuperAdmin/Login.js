@@ -25,7 +25,7 @@ class Login extends Component {
 
   render() {
     if (this.state.redirect) {
-      return <Navigate to="/SuperAdmin/AdminDashboard" />; // Redirect to dashboard
+      return <Navigate to="/Dashboard" />; // Redirect to dashboard
     }
 
     return (

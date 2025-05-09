@@ -1,14 +1,10 @@
-.categorylist{
-
+.categorylist {
     margin: 10px;
-    
     width: 23% !important;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 10px;
- background: #006ea3;
- color:white;
-    
-
+    background: #ff9cce;
+    color: #b9226f;
 }
 .alldetails{
     
@@ -22,34 +18,31 @@
 .count{
     font-size:30px;
 }
-.productlist{
+.productlist {
     margin: 10px;
     height: 120px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    background: #006ea3;
-    color:white;
+    background: #e9ff77;
+    color: #799100;
     width: 23% !important;
     border-radius: 10px;
-   
 }
-.enquirylist{
+.enquirylist {
     margin: 10px;
     height: 120px;
-    background: #006ea3;
- color:white;
+    background: #ad9be1;
+    color: #47299d;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     width: 23% !important;
     border-radius: 10px;
-   
-
 }
 .vendorlist
 {
-    background: #006ea3;
- color:white;
+    background: #ace4ff;
+    color: #0881bb;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-border-radius: 10px;
-width: 23% !important;
-margin: 10px;
-height: 120px;
+    border-radius: 10px;
+    width: 23% !important;
+    margin: 10px;
+    height: 120px;
 }
